@@ -19,12 +19,13 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 30),
-          OutlinedButton(
+          OutlinedButton.icon(
             onPressed: () {},
             style: OutlinedButton.styleFrom(
               side: BorderSide(color: Colors.white),
             ),
-            child: Text(
+            icon: Icon(Icons.),
+            label: const Text(
               'Start Quiz',
               style: TextStyle(
                 fontSize: 30,
