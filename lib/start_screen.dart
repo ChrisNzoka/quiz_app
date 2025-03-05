@@ -9,7 +9,10 @@ class HomeScreen extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min, //centers column content vertically
         children: [
-          Image.asset('assets/images/quiz-logo.png', width: 300),
+          //Opacity(opacity: 0.5,
+          //the opacity widget can be used to set the opacity by wrapping it around the intended widget we want to adjust its visibility
+          Image.asset('assets/images/quiz-logo.png',
+              width: 300, color: const Color.fromARGB(127, 255, 255, 255)),
           const SizedBox(height: 50),
           const Text(
             'Learn Flutter the fun way',
