@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               side: BorderSide(color: Colors.white),
             ),
-            icon: Icon(Icons.),
+            icon: const Icon(Icons.arrow_right_alt),
             label: const Text(
               'Start Quiz',
               style: TextStyle(
