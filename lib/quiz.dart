@@ -1,19 +1,36 @@
+
 import 'package:flutter/material.dart';
 
-class QuizCaller extends StatefulWidget {
-  const QuizCaller({super.key});
+import 'package:quiz_app/start_screen.dart';
+
+class Quiz extends StatefulWidget {
+  const Quiz({super.key});
 
   @override
-  State<QuizCaller> createState() {
-    return _QuizCallerState();
+  State<Quiz> createState(){
+    return _QuizState();
   }
 }
 
-class _QuizCallerState extends State<QuizCaller> {
-
-}
-
-@override
-Widget build(context){
-  return()
+class _QuizState extends State<Quiz> {
+  @override
+  Widget build(context){
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          decoration: const BoxDecoration(
+            //container holds the background decoration. Thus, we'll remove the background color argument from scaffold widget
+            gradient: LinearGradient(
+                begin: Alignment.topRight,
+                end: Alignment.bottomLeft,
+                colors: [
+                  Color.fromARGB(255, 185, 46, 46),
+                  Color.fromARGB(255, 130, 58, 58)
+                ]),
+          ),
+          child: const HomeScreen(),
+        ),
+      ),
+    );
+  }
 }
